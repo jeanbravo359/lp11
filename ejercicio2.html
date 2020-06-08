@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+      nro1
+      <input type="text" name="nro1" id="nro" /> <br/>
+      nro2
+      <input type="text" name="nro2" id="nro2" /> <br/>
+
+      <button onclick="ejecutar()">calcular</button>
+<p id="resultado"></p>
+</body>
+<script>
+    function suma(a,b){  
+    var resultado=a+b;
+    console.log(resultado);
+    return resultado;
+    document.getElementById("resultado").innerHTML=accion;
+    };
+    function ejecutar() {
+     var nro1=document.getElementById("nro1").value;
+     var nro2=document.getElementById("nro2").value;
+     var accion=suma(nro1,nro2);
+      document.getElementById("resultado").innerHTML="la suma es :"+accion;
+    }
+    
+
+
+</script>
+</html>
